@@ -11,3 +11,12 @@ nav {
 .h2-header {
     text-align: center;
 }
+
+h2:after {
+    content: ' ';
+    display: block;
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
