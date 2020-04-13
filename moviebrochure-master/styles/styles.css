@@ -1,3 +1,16 @@
+html, .search {
+  font-family: 'Playfair Display', serif; }
+
+nav {
+  background-color: #2d2f30;
+  color: white;
+  display: flex; }
+  nav li {
+    list-style: none; }
+
+.h2-header {
+  text-align: center; }
+
 .box {
   border: 1px solid #dbe2ae; }
 

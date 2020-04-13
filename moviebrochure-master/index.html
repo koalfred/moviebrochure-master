@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React Movie Database Mockup</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Navi bar-->
@@ -16,6 +17,7 @@
         <li>Best Films of 2019</li>
     </nav>
     <nav>
+        <input type="text" id="search" class="search">
         <li>Movies</li>
         <li>TV Shows</li>
         <li>Login</li>
@@ -30,7 +32,7 @@
 <!--End of Nav bar-->
     <main>
 <!-- This is the Title -->
-        <h2>Popular Movies</h2>
+        <h2 class="h2-header">Popular Movies</h2>
         <div class="wrapper">
             <div class="film-1 box">
                 <img src="images/placeholder.png" alt="placeholder poster">
@@ -118,7 +120,7 @@
             </div><!--end of film box-->
         </div><!--end of wrapper-->
         <footer>
-            <h2>&copy; CineWatch Team</h2>
+            <h2 class="h2-footer">&copy; CineWatch Team</h2>
         </footer>
     </main>
 </body>

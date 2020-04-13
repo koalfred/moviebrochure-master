@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK;EACD,MAAM,EAAE,iBAAwB",
-"sources": ["../scss/_filmbox.scss"],
+"mappings": "AACA,aAAc;EACV,WAAW,EAAE,yBAAyB;;ACF1C,GAAI;EACA,gBAAgB,ECAb,OAAO;EDCV,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EAEb,MAAG;IACC,UAAU,EAAE,IAAI;;AAIxB,UAAW;EACP,UAAU,EAAE,MAAM;;AEXtB,IAAK;EACD,MAAM,EAAE,iBAAwB",
+"sources": ["../scss/_fonts.scss","../scss/_header.scss","../scss/_colours.scss","../scss/_filmbox.scss"],
 "names": [],
 "file": "styles.css"
 }
