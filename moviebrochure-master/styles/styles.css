@@ -20,7 +20,7 @@ h2:after {
   margin-top: 10px; }
 
 .wrapper {
-  margin: 10px; }
+  margin-bottom: 10px; }
   .wrapper .box {
     border: 1px solid #dbe2ae;
     margin: 0 auto;
