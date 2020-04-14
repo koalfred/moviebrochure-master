@@ -1,12 +1,17 @@
+html {
+    background-color: $wrapper-bgc;
+}
+
 .wrapper {
+    max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: $wrapper-bgc;
+    background-color: white;
+
 
     .film-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background-color: #fff;
 
         .box {
         border: 1px solid $border-colour;
@@ -15,10 +20,9 @@
         position: relative;
         display: inline-block;
 
-        @media (min-width: 768px){
-            margin: 25px;
-        }
-
+            @media (min-width: 768px){
+                margin: 25px;
+            }
         }
 
         .film-summary {
@@ -39,10 +43,18 @@
                 padding: 0;
             }
 
+            .more-info {
+                text-align: center;
+                text-decoration: underline;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
             p {
                 text-align: left;
                 padding-left: 10px;
                 padding-right: 10px;
+                line-height: 25px;
             }
         }    
         .box:hover .film-summary {
@@ -52,6 +64,14 @@
 
         @media (min-width: 768px) {
             grid-template-columns: repeat(4, 2fr);
+        }
+
+        @media (min-width: 1200px) {
+            .film-summary {
+                position: initial;
+                visibility: visible;
+                opacity: 100%;
+            }
         }
 
     }
