@@ -46,36 +46,25 @@ h2:after {
     .wrapper .film-container .box {
       border: 1px solid #dbe2ae;
       text-align: center;
-      margin: 10px;
+      margin: 20px;
       position: relative;
       display: inline-block; }
+      @media (min-width: 768px) {
+        .wrapper .film-container .box {
+          margin: 25px; } }
     .wrapper .film-container .film-summary {
-      position: absolute;
-      visibility: hidden;
-      width: 120px;
-      background-color: rgba(255, 255, 255, 0.548);
-      color: black;
-      text-align: center;
       z-index: 1;
-      overflow: hidden;
+      position: absolute;
+      top: 0;
       width: 100%;
       height: 100%;
-      line-height: 100%;
-      bottom: 0%;
-      left: 44%;
-      margin-left: -60px;
-      /* Use half of the width (120/2 = 60), to center the tooltip */
+      font-size: .75em;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: black;
+      visibility: hidden;
+      overflow: hidden;
       opacity: 0;
       transition: opacity 1s; }
-      @media (min-width: 375px) {
-        .wrapper .film-container .film-summary {
-          left: 37%; } }
-      @media (min-width: 425px) {
-        .wrapper .film-container .film-summary {
-          left: 32%; } }
-      @media (min-width: 500px) {
-        .wrapper .film-container .film-summary {
-          left: 27%; } }
       .wrapper .film-container .film-summary .date {
         text-align: center;
         padding: 0; }
@@ -86,5 +75,8 @@ h2:after {
     .wrapper .film-container .box:hover .film-summary {
       visibility: visible;
       opacity: 1; }
+    @media (min-width: 768px) {
+      .wrapper .film-container {
+        grid-template-columns: repeat(4, 2fr); } }
 
 /*# sourceMappingURL=styles.css.map */
