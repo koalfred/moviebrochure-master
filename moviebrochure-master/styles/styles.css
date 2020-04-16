@@ -24,6 +24,22 @@ nav {
   nav li {
     list-style: none; }
 
+span {
+  color: #026c8a; }
+
+.main-nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .main-nav ul li {
+      padding: 0px 5px; }
+
 .h2-header {
   text-align: center; }
 
