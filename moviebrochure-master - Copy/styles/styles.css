@@ -1,0 +1,103 @@
+body, nav, ul, h1, h2, p {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; }
+
+html, .search {
+  font-family: 'Oswald', sans-serif; }
+
+nav {
+  background-color: #2d2f30;
+  color: white;
+  display: flex; }
+  nav li {
+    list-style: none; }
+
+.h2-header {
+  text-align: center; }
+
+h2:after {
+  content: ' ';
+  display: block;
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+html {
+  background-color: #fff8e6; }
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: white; }
+  .wrapper .film-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .wrapper .film-container .box {
+      border: 1px solid #dbe2ae;
+      text-align: center;
+      margin: 20px;
+      position: relative;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .wrapper .film-container .box {
+          margin: 25px; } }
+    .wrapper .film-container .film-summary {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-size: .75em;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: black;
+      visibility: hidden;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 1s; }
+      .wrapper .film-container .film-summary .date {
+        text-align: center;
+        padding: 0; }
+      .wrapper .film-container .film-summary .more-info {
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 20px;
+        padding-top: 20px; }
+      .wrapper .film-container .film-summary p {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px; }
+    .wrapper .film-container .box:hover .film-summary {
+      visibility: visible;
+      opacity: 1; }
+    @media (min-width: 768px) {
+      .wrapper .film-container {
+        grid-template-columns: repeat(4, 2fr); } }
+    @media (min-width: 1200px) {
+      .wrapper .film-container .film-summary {
+        position: initial;
+        visibility: visible;
+        opacity: 100%; } }
+
+footer {
+  background-color: #2d2f30;
+  color: white;
+  text-align: center; }
+  footer h2 {
+    padding-top: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
